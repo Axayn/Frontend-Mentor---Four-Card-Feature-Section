@@ -1,0 +1,122 @@
+.main {
+  min-height: inherit;
+  padding: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-card-feature-section {
+  display: grid;
+  justify-items: center;
+  gap: 7.4rem;
+
+  @include respond(mobile) {
+    gap: 6rem;
+  }
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: minmax(min-content, 54rem);
+  gap: 1.6rem;
+
+  text-align: center;
+
+  .section-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section__subheading {
+      @extend %text-preset-2;
+      color: var(--color-gray-500);
+    }
+    .section__title {
+      @extend %text-preset-1;
+      color: var(--color-gray-500);
+    }
+  }
+
+  .section__text {
+    @extend %text-preset-4;
+    color: var(--color-gray-500);
+  }
+}
+
+.four-card-feature-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 3.2rem;
+
+  @include respond(tablet) {
+    grid-template-columns: auto;
+  }
+
+  .card-feature {
+    max-width: 35rem;
+    min-height: 25rem;
+    padding: 3.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 1.5rem 3rem -1.1rem rgba(#83a6d2, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    &--cyan {
+      border-top: 0.8rem solid var(--color-primary-cyan);
+    }
+
+    &--red {
+      border-top: 0.8rem solid var(--color-primary-red);
+    }
+
+    &--orange {
+      border-top: 0.8rem solid var(--color-primary-orange);
+    }
+
+    &--blue {
+      border-top: 0.8rem solid var(--color-primary-blue);
+    }
+
+    &-title-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    &__title {
+      @extend %text-preset-3;
+      color: var(--color-gray-400);
+    }
+
+    &__text {
+      @extend %text-preset-5;
+      color: var(--color-gray-400);
+    }
+
+    &__icon {
+      width: 6.4rem;
+      height: 6.4rem;
+      align-self: end;
+    }
+
+    &-container--middle {
+      display: grid;
+      gap: 3.2rem;
+
+      @include respond(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include respond(mobile) {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}

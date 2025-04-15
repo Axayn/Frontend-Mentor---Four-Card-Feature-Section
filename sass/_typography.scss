@@ -1,0 +1,41 @@
+%text-preset-1 {
+  font-size: 3.6rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+
+  @include respond(mobile) {
+    font-size: 2.4rem;
+  }
+}
+
+%text-preset-2 {
+  font-size: 3.6rem;
+  font-weight: var(--font-weight-extra-light);
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+
+  @include respond(mobile) {
+    font-size: 2.4rem;
+  }
+}
+
+%text-preset-3 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.35;
+}
+
+%text-preset-4 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+}
+
+%text-preset-5 {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  letter-spacing: 0.09px;
+}

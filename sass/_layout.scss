@@ -60,6 +60,7 @@
   .card-feature {
     max-width: 35rem;
     min-height: 25rem;
+    background-color: var(--color-white);
     padding: 3.2rem;
     border-radius: 0.8rem;
     box-shadow: 0 1.5rem 3rem -1.1rem rgba(#83a6d2, 0.5);
@@ -69,19 +70,19 @@
     gap: 3.2rem;
 
     &--cyan {
-      border-top: 0.8rem solid var(--color-primary-cyan);
+      border-top: 0.5rem solid var(--color-primary-cyan);
     }
 
     &--red {
-      border-top: 0.8rem solid var(--color-primary-red);
+      border-top: 0.5rem solid var(--color-primary-red);
     }
 
     &--orange {
-      border-top: 0.8rem solid var(--color-primary-orange);
+      border-top: 0.5rem solid var(--color-primary-orange);
     }
 
     &--blue {
-      border-top: 0.8rem solid var(--color-primary-blue);
+      border-top: 0.5rem solid var(--color-primary-blue);
     }
 
     &-title-box {
